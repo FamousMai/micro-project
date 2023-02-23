@@ -1,0 +1,17 @@
+# 数据库
+[client.db.spot]
+    name = "spot"
+    logLevel = 4
+    dsn = "root@tcp(127.0.0.1:3306)/user_center?charset=utf8&parseTime=True&loc=Local"
+    level = "panic"
+    maxIdleConns = 5
+    maxOpenConns = 20
+    connMaxLifetime = "300s"
+    disableTrace = true
+    # 0: 关闭
+    # 1: error
+    # 2: warn
+    metricLevel = 0
+    detailSql = true
+    # µs, ms, s
+    slowThreshold = "10ms"
